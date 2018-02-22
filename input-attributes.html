@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Autocomplete</h2>
+
+<h3 style="font-weight:normal">Form 1 starts here</h3><hr/>
+
+<form id="form1" method="post" action="http://robothlon.com/rendezvous/submit.php">
+  On:  <input name="one" type="text" required autocomplete="on"> &nbsp;(required)<br><br>
+  Off: <input name="two" type="text" autocomplete="off"><br><br>
+  <input type="submit" value="submit button for form1">
+</form>
+<hr/>
+
+
+<h3 style="font-weight:normal">Form 1 finishes here</h3><hr/>
+
+<h2>Autofocus</h2>
+<input name="three" autofocus="on" type="text">
+<hr/>
+
+
+<h2>Form</h2>
+<input name="four" type="text" form="form1">
+<hr/>
+
+
+<h2>Form action</h2>
+<input name="submit" value="submit button for form1 with different formaction" type="submit" form="form1" formaction="http://robothlon.com/rendezvous/submit1.php">
+<hr/>
+
+<h2>Form enctype</h2>
+<input type="file" multiple name="file" form="form1">
+<input name="submit" type="submit" value="submit button for form1 with different enctype" form="form1" formenctype="multipart/form-data">
+<hr/>
+
+<h2>Form method</h2>
+<input name="submit" value="submit button for form1 with different formmethod" type="submit" form="form1" formmethod="get">
+<hr/>
+
+<h2>Form novalidate</h2>
+<input name="submit" value="submit button for form1 with form novalidate" type="submit" form="form1" formnovalidate="formnovalidate">
+<hr/>
+
+
+<h2>Form with height and width for image</h2>
+<input type="image" src="img_submit.gif" width="30" height="30" form="form1">
+<hr/>
+
+
+<h2>Attribute List</h2>
+<input list="browsers" name="browser" form="form1">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Google Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<hr/>
+
+
+<h2>min & max</h2>
+<input type="number" min="3" max="5" form="form1">
+<hr/>
+
+
+<h2>Form Multiple</h2>
+<input type="file" multiple name="multiple[]" form="form1">
+<input name="submit" type="submit" value="submit button for form1 with different enctype" form="form1" formenctype="multipart/form-data">
+<hr/>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+<hr/>
+
+<h2>Form Pattern</h2>
+
+<h3 style="font-weight:normal">Form 2 starts here</h3>
+<form method="post" id="form2" action="http://robothlon.com/rendezvous/submit.php">
+Country code: <input type="text" name="country_code" 
+pattern="[A-Za-z]{3}" title="Three letter country code">
+<input type="submit">
+</form>
+<hr/>
+
+
+<h2>Form Placeholder</h2>
+<input type="text" placeholder="Enter email here">
+<hr/>
+
+
+
+<h2>Form step</h2>
+ <input type="number" name="points" step="3">
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>
+
